@@ -1,0 +1,357 @@
+*{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1b1f24;
+    color: #ffffffd2;
+}
+/* cascading logo and image start  */
+.headerContainer{
+    display: grid;
+    grid-template-columns: 30rem auto;
+    gap: 1rem;
+}
+.headerContainer .logo{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.headerContainer .logo .textlogo{
+    padding: 0.8rem 0rem;
+    /* background-color: aliceblue; */
+    /* height: fit-content; */
+}
+.headerContainer .logo .imagelogo{
+    padding: 0.5rem 2rem;
+}
+.headerContainer .logo img{
+    width: 7.5rem;
+}
+.headerContainer .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: 0.8s;
+}
+.headerContainer .logo a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+
+/* cascading logo and image end */
+
+ /* menu cascading starting  */
+.headerContainer .menu-bar{
+    grid-column: 2/4;
+}
+.headerContainer .menu-bar ul{
+    list-style-type: none;
+}
+.headerContainer .menu-bar ul li{
+    display: inline-flex;
+    padding: 1rem;
+}
+.headerContainer .menu-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+.headerContainer .menu-bar ul li a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 1px 1px 20px rgb(224, 220, 220);
+}
+/* menu cascading End  */
+
+/* cascading image cover  */
+.imagecontainer{
+    background-image: url("/visitEthiopia/assets/images/East\ Africa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    aspect-ratio: 16/6.3;
+    padding: 2rem;
+}
+.imagecontainer .neverstop{
+    color: rgb(1, 43, 1);
+    font-size: 3rem;
+    padding-left: 2.5rem;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.imagecontainer .exploring{
+    color: rgb(1, 26, 1);
+    font-size: 3rem;
+    padding-left: 10rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.imagecontainer .visitEthiopia{
+    color: rgb(0, 22, 0);
+    font-size: 1.8rem;
+    padding-left: 2.5rem;
+    padding-top: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* background: linear-gradient(to right, #075fe4, #124E66,#6200ea,#c7eeee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+}
+.imagecontainer a{
+    background-color: #fff;
+    border: 2px solid #1b1f24;
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: #1b1f24;
+    font-weight: bolder;
+    margin-left: 41%;
+    display: block;
+    width: fit-content;
+    margin-top: 2.5rem;
+    font-style: italic;
+    transition: 0.4s;
+}
+.imagecontainer a:hover{
+    background-color: #1b1f24;
+    color: #fff;
+}
+.adventuresContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 2rem;
+    padding: 1rem;
+    justify-items: center;
+}
+.adventuresContainer .adventuretitle{
+    grid-column: 1/4;
+    justify-items: center;
+}
+.adventuresContainer .adventuretitle a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+.adventuresContainer .adventuretitle a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+.adventuresContainer .box{
+    text-align: center;
+}
+.adventuresContainer .box .image{
+    /* width: 100%; */
+    justify-items: center;
+}
+.adventuresContainer .box .image img{
+    /* width: 60%;
+    height: 70%;  */
+    width: 18rem;
+    height: 15rem;
+    border-radius: 50%;   
+}
+.adventuresContainer .box .title{
+    padding: 2rem 0rem;
+}
+.adventuresContainer .box .title h1{
+    background: linear-gradient(to right, #075fe4, #124E66,#6200ea,#c7eeee);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.adventuresContainer .box .paragraph p{
+    line-height: 2.1rem;
+}
+.adventuresContainer .box .readmore{
+    justify-items: center;
+}
+.adventuresContainer .box .readmore a{
+    background-color: #ffffffd8;
+    border: 2px solid #1b1f24;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    color: #1b1f24;
+    font-weight: bold;
+    /* margin-left: 41%; */
+    display: block;
+    width: fit-content;
+    /* margin-top: 2.5rem; */
+    font-style: italic;
+}
+.adventuresContainer .box .readmore a:hover{
+    background-color: #6489b6;
+    transition: 0.5s;
+    color: #fff;
+}
+.packagecontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+}
+.packagecontainer .packagetitle{
+    grid-column: 1/4;
+    justify-items: center;
+}
+.packagecontainer .packagetitle a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+.packagecontainer .packagetitle a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+.packagecontainer .box{
+    background-color: #2d343f;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(7, 111, 129, 0.753);
+}
+.packagecontainer .box:hover{
+    padding: 1rem;
+    /* height: calc(0.5rem); */
+    border: 2px solid black;
+    background-color: black;
+    color: #c3cad5;
+}
+.packagecontainer .box img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.packagecontainer .box h1{
+    font-size: 1.5rem;
+    text-align: center;
+    /* color: #ffffffd8; */
+    background: linear-gradient(to right,#075fe4, #124E66,#6200ea,#c7eeee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.packagecontainer .box p{
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #c3cad5;
+}
+
+/* end of package container */
+
+/* start contact us container */
+.contactcontainer{
+    display: grid;
+    grid-template-columns: auto;
+    /* background-color: #075fe4; */
+    justify-items: center;
+    gap: 1rem;
+}
+.contactcontainer .contacttitle a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    padding: 2rem;
+}
+.contactcontainer .contacttitle a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+.contactcontainer form{
+    justify-items: center;
+}
+.contactcontainer form input:not(input[type=submit]),textarea{
+    display: block;
+    padding: 1.2rem;
+    width: 35rem;
+    border: none;
+    margin: 1rem;   
+    box-shadow: 0 0 5px #075fe4;
+    background-color: #2d343f;
+    color: #fff;
+}
+.contactcontainer form input::placeholder, textarea::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #c3cad5;
+}
+.contactcontainer form input[type=submit]{
+    display: block;
+    padding: 1rem 2rem;
+    width: 13rem;
+    border: 2px solid #075fe4;
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px #075fe4;
+    background-color: #d0dbee;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contactcontainer form input[type=submit]:hover{
+    background-color: #1b1f24;
+    color: #d0dbee;
+    transition: 0.5s;
+}
+.footercontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+    /* justify-content: center; */
+}
+.footercontainer .copyright{
+    grid-column: 1/5;
+}
+.footercontainer .box h1{
+    background: linear-gradient(to right,#075fe4, #124E66,#6200ea,#c7eeee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: underline;
+}
+.footercontainer .box a{
+    display: block;
+    font-size: 1rem;
+    line-height: 3rem;
+    color: #c3cad5;
+    text-transform: capitalize;
+}
+.footercontainer .box a:hover{
+    color: #fff;
+    transition: 0.8s;
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+.footercontainer .copyright h1{
+    color: #c3cad5;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.2rem;
+}
+/* end contact us container */
