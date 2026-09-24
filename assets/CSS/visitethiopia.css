@@ -72,7 +72,7 @@ body{
 
 /* cascading image cover  */
 .imagecontainer{
-    background-image: url("/visitEthiopia/assets/images/East\ Africa.jpg");
+    background-image: url("../images/East\ Africa.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
